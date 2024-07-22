@@ -1,6 +1,6 @@
 {
   "name": "format-with-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Faster Format with CLI",
   "description": "The last formatter you need for VSCode!",
   "homepage": "https://github.com/dhananjaipai/vscode-faster-format-with-cli",
