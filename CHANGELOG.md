@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.1...v1.0.2) (2024-07-22)
+
+
+### Bug Fixes
+
+* rename package to remove name conflict; bump node version for actions ([d44d490](https://github.com/dhananjaipai/vscode-faster-format-with-cli/commit/d44d49043b6ba1cbb7b808904ce6a6e664074aab))
+
 ## [1.0.1](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.0...v1.0.1) (2024-07-22)
 
 
