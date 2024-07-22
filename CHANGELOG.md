@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.0...v1.0.1) (2024-07-22)
+
+
+### Bug Fixes
+
+* include LICENSE and update output .vsix ([a890498](https://github.com/dhananjaipai/vscode-faster-format-with-cli/commit/a890498cc7b51560071064d300bedac701fe8b92))
+
 ## 1.0.0 (2024-07-22)
 
 
