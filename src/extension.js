@@ -17,7 +17,7 @@ const MESSAGES = {
   DEBUG_TERMINAL_ATTACH: `Terminal attached`,
   ERROR_FILE_TYPE: "Faster Format with CLI currently only supports local files",
   ERROR_UNKNOWN_MODE:
-    "Unknown Extension Mode. Refer https://github.com/dhananjaipai/vscode-format-with-cli/blob/main/README.md for supported modes",
+    "Unknown Extension Mode. Refer https://github.com/dhananjaipai/vscode-faster-format-with-cli/blob/main/README.md for supported modes",
   WARN_NO_WORKSPACE:
     "The formatter is not running in a workspace, some functions may be restricted",
 };

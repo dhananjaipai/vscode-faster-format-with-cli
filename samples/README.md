@@ -13,7 +13,7 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
   // settings.json
   // ...
   "[json]" : {
-    "editor.defaultFormatter": "djpai.format-with-cli",
+    "editor.defaultFormatter": "djpai.faster-format-with-cli",
     "djpai.format.command": "npx prettier --write --ignore-unknown \"{file}\"",
     "djpai.format.mode": "inline_file"
   }
@@ -26,7 +26,7 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
   // settings.json
   // ...
   "[json]" : {
-    "editor.defaultFormatter": "djpai.format-with-cli",
+    "editor.defaultFormatter": "djpai.faster-format-with-cli",
     "djpai.format.command": "npx prettier --ignore-unknown \"{file}\"",
     "djpai.format.mode": "inline_file_stdout"
   },
@@ -39,7 +39,7 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
   // settings.json
   // ...
   "[json]" : {
-    "editor.defaultFormatter": "djpai.format-with-cli",
+    "editor.defaultFormatter": "djpai.faster-format-with-cli",
     "djpai.format.command": "npx prettier --write --stdin-filepath \"{file}\" --ignore-unknown",
     "djpai.format.mode": "inline_stdin"
   }
@@ -52,7 +52,7 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
   // settings.json
   // ...
   "[json]" : {
-    "editor.defaultFormatter": "djpai.format-with-cli",
+    "editor.defaultFormatter": "djpai.faster-format-with-cli",
     "djpai.format.command": "npx prettier --write --ignore-unknown \"{file}\"",
     "djpai.format.mode": "overwrite",
     "editor.formatOnSave": true,
