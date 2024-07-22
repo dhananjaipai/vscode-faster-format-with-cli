@@ -7,4 +7,3 @@ node_modules/**
 .yarnrc
 jsconfig.json
 CHANGELOG.md
-LICENSE
