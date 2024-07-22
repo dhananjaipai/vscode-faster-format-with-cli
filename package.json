@@ -48,8 +48,12 @@
       "url": "https://akiravoid.com"
     }
   ],
-  "extensionKind": ["workspace"],
-  "categories": ["Formatters"],
+  "extensionKind": [
+    "workspace"
+  ],
+  "categories": [
+    "Formatters"
+  ],
   "keywords": [
     "formatter",
     "cli-formatter",
@@ -64,7 +68,9 @@
     "visual-studio-code-extension",
     "extension"
   ],
-  "activationEvents": ["onLanguage"],
+  "activationEvents": [
+    "onLanguage"
+  ],
   "main": "./src/extension.js",
   "contributes": {
     "configuration": [
@@ -96,8 +102,12 @@
     ]
   },
   "lint-staged": {
-    "*": ["prettier --write --ignore-unknown"],
-    "*.{js}": ["eslint"]
+    "*": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{js}": [
+      "eslint"
+    ]
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
@@ -112,6 +122,7 @@
     "lint-staged": "^15.2.0",
     "pinst": "^3.0.0",
     "prettier": "^3.1.1",
-    "semantic-release": "^22.0.12"
+    "semantic-release": "^22.0.12",
+    "semantic-release-vsce": "^5.7.2"
   }
 }
