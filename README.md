@@ -52,7 +52,7 @@ The main feature of this extension is to send file to your cli formatter and upd
   // Example for command that will only be executed on C# language files.
   "[csharp]": {
     // Use Faster format with cli as the default for this language
-    "editor.defaultFormatter": "djpai.format-with-cli",
+    "editor.defaultFormatter": "djpai.faster-format-with-cli",
     // Command to format this file
     "djpai.format.command": "dotnet csharppier \"{file}\"",
     // Disable inline formatting as CSharpier can change the files directly.

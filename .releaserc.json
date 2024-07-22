@@ -6,8 +6,8 @@
     "@semantic-release/changelog",
     ["@semantic-release/exec", {
         "verifyReleaseCmd": "npm install -g @vscode/vsce",
-        "prepareCmd": "vsce pack -m \"chore: publish version ${nextRelease.version} to marketplace\" --no-yarn --no-git-tag-version --githubBranch main ${nextRelease.version} -o djpai.format-with-cli-${nextRelease.version}.vsix",
-        "publishCmd": "vsce publish -m \"chore: publish version ${nextRelease.version} to marketplace\" --no-yarn --no-git-tag-version --githubBranch main -p $VSCE_PAT -i djpai.format-with-cli-${nextRelease.version}.vsix"
+        "prepareCmd": "vsce pack -m \"chore: publish version ${nextRelease.version} to marketplace\" --no-yarn --no-git-tag-version --githubBranch main ${nextRelease.version} -o djpai.faster-format-with-cli-${nextRelease.version}.vsix",
+        "publishCmd": "vsce publish -m \"chore: publish version ${nextRelease.version} to marketplace\" --no-yarn --no-git-tag-version --githubBranch main -p $VSCE_PAT -i djpai.faster-format-with-cli-${nextRelease.version}.vsix"
     }],
     "@semantic-release/git",
     ["@semantic-release/github",{"assets": "*.vsix"}]
