@@ -72,7 +72,7 @@
         "title": "Faster Format with CLI",
         "properties": {
           "djpai.format.command": {
-            "default": "npx prettier  --write --ignore-unknown \"{file}\"",
+            "default": "npx prettier --write --ignore-unknown \"{file}\"",
             "type": "string",
             "scope": "language-overridable",
             "title": "CLI Command for formatting",
