@@ -110,7 +110,6 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "yarn run package",
     "lint": "eslint src"
   },
   "devDependencies": {
