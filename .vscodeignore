@@ -1,0 +1,11 @@
+.vscode/**
+node_modules/**
+src/**
+.github/**
+.gitignore
+.eslintrc.json
+.releaserc.json
+.yarnrc
+jsconfig.json
+CHANGELOG.md
+LICENSE

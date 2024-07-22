@@ -1,0 +1,117 @@
+{
+  "name": "format-with-cli",
+  "version": "0.1.0",
+  "displayName": "Faster Format with CLI",
+  "description": "The last formatter you need for VSCode!",
+  "homepage": "https://github.com/dhananjaipai/vscode-faster-format-with-cli",
+  "publisher": "djpai",
+  "license": "MIT",
+  "pricing": "Free",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhananjaipai/vscode-faster-format-with-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues"
+  },
+  "qna": "https://github.com/dhananjaipai/vscode-faster-format-with-cli/discussions",
+  "author": {
+    "name": "djpai",
+    "email": "hello@djpai.dev",
+    "url": "https://djpai.dev"
+  },
+  "contributors": [
+    {
+      "name": "djpai",
+      "email": "hello@djpai.dev",
+      "url": "https://djpai.dev"
+    },
+    {
+      "name": "AkiraVoid",
+      "email": "me@akiravoid.com",
+      "url": "https://akiravoid.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "djpai",
+      "email": "hello@djpai.dev",
+      "url": "https://djpai.dev"
+    },
+    {
+      "name": "AkiraVoid",
+      "email": "me@akiravoid.com",
+      "url": "https://akiravoid.com"
+    }
+  ],
+  "extensionKind": ["workspace"],
+  "categories": ["Formatters"],
+  "keywords": [
+    "formatter",
+    "cli-formatter",
+    "terminal-formatter",
+    "vscode-formatter",
+    "format-all-languages",
+    "format-unsupported-language",
+    "unsupported-language-formatter",
+    "language-formatter",
+    "vscode",
+    "visual-studio-code",
+    "visual-studio-code-extension",
+    "extension"
+  ],
+  "activationEvents": ["onLanguage"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Faster Format with CLI",
+        "properties": {
+          "djpai.format.command": {
+            "default": "npx prettier  --write --ignore-unknown \"{file}\"",
+            "type": "string",
+            "scope": "language-overridable",
+            "title": "CLI Command for formatting",
+            "description": "Set the command for formatting current file. The path to current file can be set by placeholder {file}. This command will be executed with the integrated terminal of Visual Studio Code, which uses the workspace folder path as working directory. IMP! Surround the {file} placeholder within the double quotes to avoid path issues with spaces or special characters in filename"
+          },
+          "djpai.format.mode": {
+            "default": "inline_file",
+            "type": "string",
+            "scope": "language-overridable",
+            "enum": [
+              "inline_file",
+              "inline_file_stdout",
+              "inline_stdin",
+              "overwrite"
+            ],
+            "title": "Mode for passing file to the formatter",
+            "description": "Selects the mode for passing file contents to the cli command. Please refer the extension documentation for details of how each mode works and the expectation from CLI Command to process the output. The default mode expects the cli command to overwrite the file with the formatted content"
+          }
+        }
+      }
+    ]
+  },
+  "lint-staged": {
+    "*": ["prettier --write --ignore-unknown"],
+    "*.{js}": ["eslint"]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "pinst": "^3.0.0",
+    "prettier": "^3.1.1",
+    "semantic-release": "^22.0.12"
+  }
+}
