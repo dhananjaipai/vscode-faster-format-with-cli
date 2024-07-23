@@ -15,6 +15,7 @@ A simple extension that can support any language, any file type, any formatter a
     - [One extension to format them all!](#one-extension-to-format-them-all)
   - [Features](#features)
   - [Requirements](#requirements)
+    - [Optional Requirements](#optional-requirements)
   - [Extension Settings](#extension-settings)
     - [`djpai.format.command`](#djpaiformatcommand)
     - [`djpai.format.mode`](#djpaiformatmode)
@@ -33,6 +34,11 @@ The main feature of this extension is to send file to your cli formatter and upd
 ## Requirements
 
 - Visual Studio Code: ^1.85.0
+
+### Optional Requirements
+
+- `nodejs`: if you are using the default `npx prettier` command for formatting
+- any custom commands you use as formatter to be available at `$PATH`
 
 ## Extension Settings
 
@@ -170,6 +176,9 @@ The extension **writes** the current file contents into a temporary file and thi
 #### `inline_stdin`
 > This is _fastest_ inline solution, but expects the formatter to be able to read from stdin and print the formatted contents into stdout.
 
+> [!WARNING]
+> - DO NOTE THAT this is only tested in unix shells with `cat` and _may not work as expected in CMD/Powershell terminal_ because of the way contents are currently piped into the command. Please [raise an issue](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues)/submit a PR if you could help test.
+
 **Example:**
 ```jsonc
 // settings.json
@@ -193,7 +202,7 @@ The extension **writes** the current file contents into a temporary file and thi
 <details>
 <summary> How it works </summary>
 
-The extension `echo`s the current file contents and `|` pipes it to your command for formatting. `It expects the formatter command to read from stdin and print formatted file to stdout` which is then **read** to update the current file.
+The extension `cat`s the current file contents using HEREDOC strings and `|` pipes it to your command for formatting. `It expects the formatter command to read from stdin and print formatted file contents to stdout` which is then **read** to update the current file.
 
 </details>
 

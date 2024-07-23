@@ -8,7 +8,7 @@ You should have the cli installed and available locally in the `$PATH` for the c
 
 Use any one of the following. Refer [Modes](../README.md#modes) for more info
 #### **inline_file**
-```json
+```jsonc
 {
   // settings.json
   // ...
@@ -22,7 +22,8 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
 ```
 
 #### **inline_file_stdout**
-```json
+```jsonc
+{
   // settings.json
   // ...
   "[json]" : {
@@ -35,7 +36,8 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
 ```
 
 #### **inline_stdin**
-```json
+```jsonc
+{
   // settings.json
   // ...
   "[json]" : {
@@ -48,7 +50,8 @@ Use any one of the following. Refer [Modes](../README.md#modes) for more info
 ```
 
 #### **overwrite**
-```json
+```jsonc
+{
   // settings.json
   // ...
   "[json]" : {
