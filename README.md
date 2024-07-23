@@ -1,6 +1,9 @@
 # Faster<sup>[*](#footnote)</sup> Format with CLI
 ### One extension to format them all!
 A simple extension that can support any language, any file type, any formatter and any custom formatter config - all customizable with CLI commands.
+
+![Extension Demo](demo.gif "Extension Demo")
+
 > [!TIP]
 >
 > **Think about it:**
@@ -43,7 +46,7 @@ The main feature of this extension is to send file to your cli formatter and upd
 ## Extension Settings
 
 > [!NOTE]
->  - Refer these [presets](samples/README.md) for common formatters and languages. Please feel free to raise an [issue](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues) to document your favorite language/cli command options
+>  - Refer the sample VsCode [settings.json sample](samples/.vscode/settings.json) for example usage and [samples/README.md](samples/README.md) for common formatters and languages. Please feel free to raise an [issue](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues) to document your favorite language/cli command options
 
 **Detailed Example:**
 ```jsonc
@@ -268,6 +271,8 @@ The extension passes the current file to your command for formatting. `It expect
 
 > [!TIP]
 > - Use `Developer: Set Log Level...` command to set the level to `Debug` to get additional logs from the output channel `fasterFormatWithCLI` for debugging
+
+- Language `[jsonc] - JSON with comments` not supported due to [issues with VSCode settings.json](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues/3)
 
 - Only supports working with files that are present on the filesystem - ie, `New` files that have never been saved will not be formatted.
 - When using the `overwrite` mode, the file should be saved before formatting, or can cause conflicts - since CLI overwrites the source file. Recommendation is to use `overwrite` mode only with `editor.formatOnSave = true` Setting.

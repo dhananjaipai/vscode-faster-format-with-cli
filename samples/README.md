@@ -1,5 +1,6 @@
 # Samples for common languages in all 4 supported modes
 
+The [samples/.vscode/settings.json](samples/.vscode/settings.json) in the repo is a good place for reference.  
 You can use the files in `samples/` to test if the configurations work for you. Make them unformatted and try your config.  
 You should have the cli installed and available locally in the `$PATH` for the commands to work
 

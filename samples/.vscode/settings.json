@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "djpai.faster-format-with-cli",
+  "djpai.format.command": "prettier --stdin-filepath \"{file}\" --ignore-unknown",
+  // probably higher performance; may have OS specific quirks
+  "djpai.format.mode": "inline_stdin",
+  "[just]": {
+    "djpai.format.command": "just --fmt --unstable --justfile \"{file}\"",
+    // no command flag to "print" to stdout; using default mode
+    "djpai.format.mode": "inline_file"
+  },
+  "[shellscript]": {
+    "djpai.format.command": "shfmt \"{file}\"",
+    // better performace than inline_file; should work cross platform
+    "djpai.format.mode": "inline_file_stdout"
+  },
+  "[packer]": {
+    "djpai.format.command": "sed '/^$/N;/^\\n$/D' | packer fmt -",
+    "djpai.format.mode": "inline_stdin"
+  },
+  "[terraform]": {
+    "djpai.format.command": "sed '/^$/N;/^\\n$/D' | terraform fmt -",
+    "djpai.format.mode": "inline_stdin"
+  },
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono"
+}
