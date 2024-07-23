@@ -179,7 +179,8 @@ const formatInlineFileStdOUT = (doc, cmd) => {
 
 const formatInlineStdIN = (doc, cmd) => {
   try {
-    const command = `echo '${doc.getText()}' | ${cmd.replaceAll("{file}", doc.fileName)}`;
+    // const command = `echo '${doc.getText().replace(/'/g, "\\'")}' | ${cmd.replaceAll("{file}", doc.fileName)}`;
+    const command = `cat <<'FSTRFMTWTCLIDLM' | ${cmd.replaceAll("{file}", doc.fileName)}\n${doc.getText()}\nFSTRFMTWTCLIDLM`;
     outputChannel.debug(MESSAGES.DEBUG_FORMAT_COMMAND(command, doc.fileName));
     const output = execSync(command, {
       encoding: "utf-8",
