@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.3...v1.1.0) (2024-07-23)
+
+
+### Features
+
+* add samples for testing, readme updates and gif demo [skip ci] ([c3f3424](https://github.com/dhananjaipai/vscode-faster-format-with-cli/commit/c3f34240ca091fa21ccd3cec1f1c029d159eaf23))
+
+
+### Bug Fixes
+
+* remove jsonc support and solve settings.json overwrite ([#4](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues/4)) ([36922ee](https://github.com/dhananjaipai/vscode-faster-format-with-cli/commit/36922eef2aa507102280d9c449d2c4de5192ec0b))
+
 ## [1.0.3](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.2...v1.0.3) (2024-07-23)
 
 
