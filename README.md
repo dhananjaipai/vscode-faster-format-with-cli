@@ -1,6 +1,11 @@
 # Faster<sup>[*](#footnote)</sup> Format with CLI
 ### One extension to format them all!
+
 A simple extension that can support any language, any file type, any formatter and any custom formatter config - all customizable with CLI commands.
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dhananjaipai/vscode-faster-format-with-cli/publish.yml)
+![GitHub Release](https://img.shields.io/github/v/release/dhananjaipai/vscode-faster-format-with-cli)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/djpai.faster-format-with-cli)
 
 ![Extension Demo](demo.gif "Extension Demo")
 
