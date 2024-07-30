@@ -114,12 +114,16 @@ const formatInlineFile = (doc, cmd) => {
     outputChannel.debug(MESSAGES.DEBUG_FORMAT_RESULT(output));
 
     /** Only edit document if there is output from formatter. */
-    if (output === "") return [];
+    if (output === "") {
+      rmSync(tmpFile);
+      return [];
+    }
 
     const edit = updateEditorFile(doc, output);
     outputChannel.info("Document formatted");
     rmSync(tmpFile);
     return [edit];
+
   } catch ({ message }) {
     rmSync(tmpFile);
     logError(message, outputChannel);
@@ -140,13 +144,16 @@ const formatInlineFileStdOUT = (doc, cmd) => {
     outputChannel.debug(MESSAGES.DEBUG_FORMAT_RESULT(output));
 
     /** Only edit document if there is output from formatter. */
-    if (output === "") return [];
+    if (output === "") {
+      rmSync(tmpFile);
+      return [];
+    }
 
     const edit = updateEditorFile(doc, output);
     outputChannel.info("Document formatted");
     rmSync(tmpFile);
-
     return [edit];
+
   } catch ({ message }) {
     rmSync(tmpFile);
     logError(message, outputChannel);
@@ -166,12 +173,15 @@ const formatInlineStdIN = (doc, cmd) => {
     outputChannel.debug(MESSAGES.DEBUG_FORMAT_RESULT(output));
 
     /** Only edit document if there is output from formatter. */
-    if (output === "") return [];
+    if (output === "") {
+      rmSync(tmpFile);
+      return [];
+    }
 
     const edit = updateEditorFile(doc, output);
     outputChannel.info("Document formatted");
-
     return [edit];
+
   } catch ({ message }) {
     logError(message, outputChannel);
   }

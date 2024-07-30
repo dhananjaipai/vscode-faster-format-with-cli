@@ -1,3 +1,5 @@
+<!-- markdownlint-disable -->
+
 ## [1.1.0](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.3...v1.1.0) (2024-07-23)
 
 
