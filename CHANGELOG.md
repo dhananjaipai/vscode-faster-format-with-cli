@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.1.0...v1.1.1) (2024-07-30)
+
+
+### Bug Fixes
+
+* delete temp file when there is no format output; fixes [#5](https://github.com/dhananjaipai/vscode-faster-format-with-cli/issues/5) ([99223ea](https://github.com/dhananjaipai/vscode-faster-format-with-cli/commit/99223ea32ad5536d82d50d865c2779bc257c29b3))
+
 <!-- markdownlint-disable -->
 
 ## [1.1.0](https://github.com/dhananjaipai/vscode-faster-format-with-cli/compare/v1.0.3...v1.1.0) (2024-07-23)
